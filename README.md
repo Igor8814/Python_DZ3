@@ -42,3 +42,19 @@ float_list = [1.1, 1.2, 3.1, 5, 10.01]
 list = [round(i % 1,2) for i in float_list if i % 1 != 0]
 print(max(list) - min(list))
 ~~~
+Напишите программу, которая 
+будет преобразовывать десятичное
+число в двоичное.
+Пример:
+- 45 -> 101101
+- 3 -> 11
+- 2 -> 10
+~~~
+numb = int(input('Введите число: '))
+b = ""
+while numb != 0:
+    b = str(numb % 2) + b
+    numb = numb //2
+print(b) 
+~~~
+   
